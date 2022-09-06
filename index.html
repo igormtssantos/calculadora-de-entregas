@@ -13,6 +13,7 @@
             <h1>CALCULADORA DE ENTREGAS</h1>
             <input id="data" name="data" type="date" placeholder="Dia do cálculo">
             <select id="entregador" name="entregador">
+                <option value=" " selected>Selecione o entregador</option>
                 <option value="danilo">Danilo</option>
                 <option value="gabriel">Gabriel</option>
                 <option value="taxa">Motoboy Taxa</option>
@@ -21,12 +22,10 @@
             <input id="qtdtaxas" name="qtdtaxas" type="number" placeholder="Quantidade total de taxas acima de R$3,99">
             <input id="taxas" name="taxas" type="number" placeholder="Valor total de taxas acima de R$3,99">
             <input id="descontos" name="descontos" type="number" placeholder="Descontos">
-            <button onclick="calcular()">Calcular</button><!--onclick para linkar com a função no js-->
+            <input id="button" type="submit" onclick="calcular()" value="Calcular"><!--onclick para linkar com a função no js-->
 
-            <div id="resultado">
-
-            </div>
-    </div>
+            <div id="resultado"> </div>
+        </div>
 
     <script src="script.js"> </script>
 

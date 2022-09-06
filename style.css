@@ -30,7 +30,7 @@ input, select{
     margin-top: 5px;
 }
 
-button{
+#button{
     cursor: pointer;
     width: 90px;
     height: 30px;
@@ -42,11 +42,11 @@ button{
     font-size: 18px;
 }
 
-button:hover{
+#button:hover{
     box-shadow: 0 0 8px #9c9c9d;
 }
 
-button:active{
+#button:active{
     transform: scale(0.95);
 }
 

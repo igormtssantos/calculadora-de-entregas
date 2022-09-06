@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <title>Calculadora de entregas</title>
+</head>
+<body>
+
+
+    <div class="container">
+            <h1>CALCULADORA DE ENTREGAS</h1>
+            <input id="data" name="data" type="date" placeholder="Dia do cálculo">
+            <select id="entregador" name="entregador">
+                <option value="danilo">Danilo</option>
+                <option value="gabriel">Gabriel</option>
+                <option value="taxa">Motoboy Taxa</option>
+            </select>
+            <input id="entregas" name="entregas" type="number" placeholder="Quantidade total de entregas">
+            <input id="qtdtaxas" name="qtdtaxas" type="number" placeholder="Quantidade total de taxas acima de R$3,99">
+            <input id="taxas" name="taxas" type="number" placeholder="Valor total de taxas acima de R$3,99">
+            <input id="descontos" name="descontos" type="number" placeholder="Descontos">
+            <button onclick="calcular()">Calcular</button><!--onclick para linkar com a função no js-->
+
+            <div id="resultado">
+
+            </div>
+    </div>
+
+    <script src="script.js"> </script>
+
+</body>
+</html>
